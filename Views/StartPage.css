@@ -1,6 +1,5 @@
 html, body{
   font-family: 'Ubuntu', sans-serif;
-  /* font-family: Open Sans, Cochin, Georgia, Times, 'Times New Roman', serif; */
   font-size: medium;
   height: 100%;
   margin: 0;
@@ -150,6 +149,9 @@ html, body{
 .item-footer-content #email{
   color: #000;
 }
+#email:hover{
+  opacity: 0.7;
+}
 
 .fa {
   padding: 10px;
@@ -185,6 +187,7 @@ html, body{
 
 #downloadbutton{
   background-color: #565554;
+  font-family: 'Neucha', cursive;
   font-size: medium; 
   /* border-radius: 6px;  */
   /* border-color: #565554; */
@@ -194,10 +197,7 @@ html, body{
 }
 
 #downloadbutton:hover{
-  background-color: #565554;
-  border-color: #565554;
-  /* border-width: 2px;  */
-  color: #fefefe;
+  opacity: 0.7;
 }
 
   /* The Modal (background) */
