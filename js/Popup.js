@@ -5,6 +5,7 @@ var clickbcuimg;
 var clickwarwickimg;
 var clickskillsimg;
 var clicksketchatimg;
+var clickbverketimg;
 
 var modalme;
 var modaldatatjej;
@@ -13,6 +14,7 @@ var modalbcu;
 var modalwarwick;
 var modalskills;
 var modalsketchat;
+var modalbverket;
 
 var spanme;
 var spandatatjej;
@@ -21,6 +23,7 @@ var spanbcu;
 var spanwarwick; 
 var spanskills; 
 var spansketchat; 
+var spanbverket; 
 
 
 
@@ -33,6 +36,7 @@ window.onload = function(){
     clickwarwickimg = document.getElementById("warwick");
     clickskillsimg = document.getElementById("skills");
     clicksketchatimg = document.getElementById("sketchat");
+    clickbverketimg = document.getElementById("bverket");
     
     // Get the modal
     modalme = document.getElementById("myModalme");
@@ -42,6 +46,7 @@ window.onload = function(){
     modalwarwick = document.getElementById("myModalwarwick");
     modalskills = document.getElementById("myModalskills");
     modalsketchat = document.getElementById("myModalsketchat");
+    modalbverket = document.getElementById("myModalbverket");
 
     // Get the <span> element that closes the modal
     spanme = document.getElementsByClassName("closeme")[0];
@@ -50,7 +55,8 @@ window.onload = function(){
     spanbcu = document.getElementsByClassName("closebcu")[0];
     spanwarwick = document.getElementsByClassName("closewarwick")[0];
     spanskills = document.getElementsByClassName("closeskills")[0];
-    this.spansketchat = document.getElementsByClassName("closesketchat")[0];
+    spansketchat = document.getElementsByClassName("closesketchat")[0];
+    spanbverket = document.getElementsByClassName("closebverket")[0];
 
     //When the user clicks the button, open the modal 
     clickmeimg.onclick = function () {
@@ -74,8 +80,13 @@ window.onload = function(){
     clickskillsimg.onclick = function () {
         modalskills.style.display = "block";
     }
+
     clicksketchatimg.onclick = function () {
         modalsketchat.style.display = "block";
+    }
+    
+    clickbverketimg.onclick = function () {
+        modalbverket.style.display = "block";
     }
 
     // When the user clicks on <span> (x), close the modal
@@ -99,6 +110,9 @@ window.onload = function(){
     }
     spansketchat.onclick = function () {
         modalsketchat.style.display = "none";
+    }
+    spanbverket.onclick = function () {
+        modalbverket.style.display = "none";
     }
     
 }
@@ -125,10 +139,7 @@ window.onclick = function (event) {
     if (event.target == modalsketchat) {
         modalsketchat.style.display = "none";
     }
+    if (event.target == modalbverket) {
+        modalbverket.style.display = "none";
+    }
 }
-
-
-
-
-
-

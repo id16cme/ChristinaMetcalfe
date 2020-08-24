@@ -71,8 +71,9 @@ html, body{
 
 .bg {
   /* The image used */
-  background-image: url("../images/thisismesmall.jpg");
-  filter: grayscale(40%);
+  /*background-image: url("../images/thisismesmall.jpg");*/
+  background-image: url("../images/meonnorraberget.jpg");
+  /*filter: grayscale(40%);*/
   /* Full height */
   height: 100%; 
   /* Center and scale the image nicely */
@@ -81,16 +82,18 @@ html, body{
   background-size: cover;
   position: relative;
 }
+
 .herotext {
   text-align: center;
-  font-family: 'Neucha', cursive;
+  font-family: 'Open sans', cursive;
   position: absolute;
-  top: 80%;
+  top: 75%;
   left: 30%;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, -50%);
   color: #fefefe;
   background-color: #565554;
   padding: 1.5rem;
+  opacity: 90%;
 }
 
 /* .item-about #thisismepic {
@@ -127,8 +130,20 @@ html, body{
   opacity: 0.5;
 }
 
+.grid-containter-modal{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item-modal{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+
 .item-footer{
-  font-family: 'Neucha', cursive;
+  font-family: 'Neucha', sans-serif;
   grid-area: footer;
   margin: 0 auto;
   padding: 10px;
@@ -226,9 +241,9 @@ html, body{
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #888;
-  width: 80%; 
+  width: 70%; 
 }
   
 /* The Close Button */
@@ -246,16 +261,25 @@ html, body{
   cursor: pointer;
 }
 #popupimg{
-  height: 100px;
+  height: 150px;
+}
+
+#adventureme{
+  height: 150px;
 }
 
 @media only screen and (max-width: 950px){
   .grid-whoIam{
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
+
+  .grid-containter-modal{
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
   /* .item-about #thisismepic{ */
     .item-header #thisismepic{
-    height: 200px;
+    height: 150px;
   }  
   .grid-header h2{
     /* padding: 1.5rem; */
@@ -267,4 +291,16 @@ html, body{
   #popupimg{
     height: 90px;
   }
+  #adventureme{
+    height: 150px;
+  }
+.herotext{
+  top: 80%;
+  left: 30%;
+  transform: translate(-20%, -70%);
+  padding:0,1rem;
+  opacity: 90%;
+
+}
+
 }
