@@ -6,6 +6,7 @@ var clickwarwickimg;
 var clickskillsimg;
 var clicksketchatimg;
 var clickbverketimg;
+var clickthesisimg;
 
 var modalme;
 var modaldatatjej;
@@ -15,6 +16,7 @@ var modalwarwick;
 var modalskills;
 var modalsketchat;
 var modalbverket;
+var modalthesis;
 
 var spanme;
 var spandatatjej;
@@ -24,6 +26,7 @@ var spanwarwick;
 var spanskills; 
 var spansketchat; 
 var spanbverket; 
+var spanthesis;
 
 
 
@@ -37,6 +40,7 @@ window.onload = function(){
     clickskillsimg = document.getElementById("skills");
     clicksketchatimg = document.getElementById("sketchat");
     clickbverketimg = document.getElementById("bverket");
+    clickthesisimg = document.getElementById("thesis");
     
     // Get the modal
     modalme = document.getElementById("myModalme");
@@ -47,6 +51,7 @@ window.onload = function(){
     modalskills = document.getElementById("myModalskills");
     modalsketchat = document.getElementById("myModalsketchat");
     modalbverket = document.getElementById("myModalbverket");
+    modalthesis = document.getElementById("myModalthesis");
 
     // Get the <span> element that closes the modal
     spanme = document.getElementsByClassName("closeme")[0];
@@ -57,6 +62,7 @@ window.onload = function(){
     spanskills = document.getElementsByClassName("closeskills")[0];
     spansketchat = document.getElementsByClassName("closesketchat")[0];
     spanbverket = document.getElementsByClassName("closebverket")[0];
+    spanthesis = document.getElementsByClassName("closethesis")[0];
 
     //When the user clicks the button, open the modal 
     clickmeimg.onclick = function () {
@@ -88,6 +94,9 @@ window.onload = function(){
     clickbverketimg.onclick = function () {
         modalbverket.style.display = "block";
     }
+    clickthesisimg.onclick = function () {
+        modalthesis.style.display = "block";
+    }
 
     // When the user clicks on <span> (x), close the modal
     spanme.onclick = function () {
@@ -113,6 +122,9 @@ window.onload = function(){
     }
     spanbverket.onclick = function () {
         modalbverket.style.display = "none";
+    }
+    spanthesis.onclick = function () {
+        modalthesis.style.display = "none";
     }
     
 }
@@ -141,5 +153,8 @@ window.onclick = function (event) {
     }
     if (event.target == modalbverket) {
         modalbverket.style.display = "none";
+    }
+    if (event.target == modalthesis) {
+        modalthesis.style.display = "none";
     }
 }
