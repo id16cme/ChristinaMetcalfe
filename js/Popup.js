@@ -7,6 +7,7 @@ var clickskillsimg;
 var clicksketchatimg;
 var clickbverketimg;
 var clickthesisimg;
+var clickericssonimg;
 
 var modalme;
 var modaldatatjej;
@@ -17,6 +18,7 @@ var modalskills;
 var modalsketchat;
 var modalbverket;
 var modalthesis;
+var modalericsson;
 
 var spanme;
 var spandatatjej;
@@ -27,7 +29,7 @@ var spanskills;
 var spansketchat; 
 var spanbverket; 
 var spanthesis;
-
+var spanericsson;
 
 
 window.onload = function(){
@@ -41,6 +43,7 @@ window.onload = function(){
     clicksketchatimg = document.getElementById("sketchat");
     clickbverketimg = document.getElementById("bverket");
     clickthesisimg = document.getElementById("thesis");
+    clickericssonimg = document.getElementById("ericsson");
     
     // Get the modal
     modalme = document.getElementById("myModalme");
@@ -52,6 +55,7 @@ window.onload = function(){
     modalsketchat = document.getElementById("myModalsketchat");
     modalbverket = document.getElementById("myModalbverket");
     modalthesis = document.getElementById("myModalthesis");
+    modalericsson = document.getElementById("myModalericsson");
 
     // Get the <span> element that closes the modal
     spanme = document.getElementsByClassName("closeme")[0];
@@ -63,6 +67,7 @@ window.onload = function(){
     spansketchat = document.getElementsByClassName("closesketchat")[0];
     spanbverket = document.getElementsByClassName("closebverket")[0];
     spanthesis = document.getElementsByClassName("closethesis")[0];
+    spanericsson = document.getElementsByClassName("closeericsson")[0];
 
     //When the user clicks the button, open the modal 
     clickmeimg.onclick = function () {
@@ -97,6 +102,9 @@ window.onload = function(){
     clickthesisimg.onclick = function () {
         modalthesis.style.display = "block";
     }
+    clickericssonimg.onclick = function () {
+        modalericsson.style.display = "block";
+    }
 
     // When the user clicks on <span> (x), close the modal
     spanme.onclick = function () {
@@ -125,6 +133,9 @@ window.onload = function(){
     }
     spanthesis.onclick = function () {
         modalthesis.style.display = "none";
+    }
+    spanericsson.onclick = function () {
+        modalericsson.style.display = "none";
     }
     
 }
@@ -156,5 +167,8 @@ window.onclick = function (event) {
     }
     if (event.target == modalthesis) {
         modalthesis.style.display = "none";
+    }
+    if (event.target == modalericsson) {
+        modalericsson.style.display = "none";
     }
 }
